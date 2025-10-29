@@ -1,12 +1,5 @@
 # DoBot Pick-and-Place Project
 
-**Course**: Space Robotics - Project 02 Group 01
-**Team**: Abhijay Sekhar Choudhary, Kai Ikeuchi, Ronan Raikar, Subesh Shanmugam
-
-Vision-based robotic pick-and-place system using YOLOv8 and DoBot Magician.
-
----
-
 ## Installation
 
 ### 1. DoBot Driver
@@ -31,7 +24,7 @@ sudo apt install ros-noetic-realsense2-camera
 
 ## How to Run
 
-### Setup (WSL2 Only)
+### Setup (WSL2)
 
 **Windows PowerShell (as Admin):**
 
@@ -40,12 +33,12 @@ First, check which USB devices need to be attached:
 usbipd list
 ```
 
-Find your devices (look for DoBot and RealSense camera), then attach both:
+Find the devices (look for DoBot and RealSense camera), then attach both:
 ```powershell
-# Attach DoBot (example: busid 2-2, yours may differ)
+# Attach DoBot (example: busid 2-2)
 usbipd attach --wsl --busid 2-2
 
-# Attach RealSense Camera (example: busid 1-4, yours may differ)
+# Attach RealSense Camera (example: busid 1-4)
 usbipd attach --wsl --busid 1-4
 ```
 
@@ -87,15 +80,15 @@ python3 dobot_pickup_proper.py
 ---
 
 ## Usage
-
-In Terminal 4, select object:
-- Press `1` for PEN
-- Press `2` for USB
-- Press `3` for TOP
+- Press 1 for PEN
+- Press 2 for USB
+- Press 3 for TOP
+- Press 4 for TEST (fixed position)
+- Press t for TEST TOP (fixed position)
 
 ---
 
-## Calibration (One-time Setup)
+## Calibration
 
 ```bash
 python3 calibration_xyz.py

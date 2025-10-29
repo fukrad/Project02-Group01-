@@ -1,18 +1,15 @@
 # DoBot Pick-and-Place Project
 
+**Course**: Space Robotics - Project 02 Group 01
+**Team**: Abhijay Sekhar Choudhary, Kai Ikeuchi, Ronan Raikar, Subesh Shanmugam
+
+Vision-based robotic pick-and-place system using YOLOv8 and DoBot Magician.
+
+---
+
 ## Installation
 
-### 1. Install Python Dependencies
-```bash
-pip install ultralytics opencv-python pyrealsense2 numpy open3d
-```
-
-### 2. Install ROS Packages
-```bash
-sudo apt install ros-noetic-realsense2-camera ros-noetic-cv-bridge
-```
-
-### 3. Install DoBot Driver
+### 1. DoBot Driver
 ```bash
 cd ~/catkin_ws/src
 git clone https://github.com/gapaul/dobot_magician_driver.git
@@ -20,6 +17,15 @@ cd ~/catkin_ws
 catkin_make
 source devel/setup.bash
 ```
+
+### 2. RealSense ROS
+```bash
+sudo apt install ros-noetic-realsense2-camera
+```
+
+**Required repositories:**
+- DoBot Driver: https://github.com/gapaul/dobot_magician_driver
+- RealSense ROS: https://github.com/IntelRealSense/realsense-ros
 
 ---
 

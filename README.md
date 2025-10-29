@@ -67,13 +67,13 @@ roslaunch realsense2_camera rs_camera.launch align_depth:=true
 
 **Terminal 3: YOLO Detector**
 ```bash
-cd /root/project2
+cd ~/Project02-Group01-/src
 python3 yolo_detector.py
 ```
 
 **Terminal 4: Pickup Controller**
 ```bash
-cd /root/project2
+cd ~/Project02-Group01-/src
 python3 dobot_pickup_proper.py
 ```
 
@@ -91,6 +91,7 @@ python3 dobot_pickup_proper.py
 ## Calibration
 
 ```bash
+cd ~/Project02-Group01-/src
 python3 calibration_xyz.py
 ```
 

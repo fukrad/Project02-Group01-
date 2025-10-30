@@ -218,7 +218,7 @@ class SafeCalibration:
             }
         }
 
-        with open('/root/project2/calibration_30points_with_rotation.json', 'w') as f:
+        with open('calibration_30points_with_rotation.json', 'w') as f:
             json.dump(data, f, indent=2)
 
         print('\nSaved!\n')

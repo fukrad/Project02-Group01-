@@ -8,7 +8,7 @@ from geometry_msgs.msg import Pose
 import time
 
 # Load calibration
-CALIBRATION_FILE = '/root/project2/calibration_30points_with_rotation.json'
+CALIBRATION_FILE = 'calibration_30points_with_rotation.json'
 with open(CALIBRATION_FILE, 'r') as f:
     cal_data = json.load(f)
 

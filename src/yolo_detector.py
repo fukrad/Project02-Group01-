@@ -8,7 +8,7 @@ from ultralytics import YOLO
 import json
 import open3d as o3d
 
-MODEL_PATH = '/root/project2/yolov8n_fair.pt'
+MODEL_PATH = 'yolov8n_fair.pt'
 CONF_THRESHOLD = 0.5
 
 
